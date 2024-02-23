@@ -1,0 +1,57 @@
+/*NAV BAR*/
+.navbar-custom {
+    background: linear-gradient(to right, #3c6a97, #264b70 49%, #0f3356 50%, #0a3056);
+    height: 120px;
+}
+
+.navbar-custom h5 {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.navbar-custom h5 i {
+    margin-right: 5px;
+}
+
+.navbar-contraido {
+    height: 60px; 
+    transition: height 0.3s; 
+}
+
+.navbar-expandido {
+    height: 100px; 
+    transition: height 0.3s;
+}
+
+
+/*MENU ARRASTRABLE*/
+
+@media (max-width: 768px) {
+
+}
+
+/*imagenes*/
+
+.image-right {
+    float: right;
+    margin-left: 330px; /* Ajusta este valor según sea necesario */
+    margin-right: 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.custom-img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: 20%;
+}
+
+
+/*espaciado a titulos*/
