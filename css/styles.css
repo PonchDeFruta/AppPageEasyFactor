@@ -1,6 +1,54 @@
 /*NAV BAR*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 
+
+/* Letra */
+
+/* Definir estilos adicionales según sea necesario */
+.custom-text {
+    /* Estilo base del texto */
+    font-size: 45px;
+    /* Tamaño de fuente base */
+}
+
+@media (max-width: 576px) {
+
+    /* Estilos para pantallas extra pequeñas (menos de 576px) */
+    .custom-text {
+        font-size: 14px;
+        /* Reducir el tamaño de fuente para pantallas extra pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Estilos para pantallas pequeñas (menos de 768px) */
+    .custom-text {
+        font-size: 16px;
+        /* Tamaño de fuente predeterminado */
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* Estilos para pantallas medianas (menos de 992px) */
+    .custom-text {
+        font-size: 18px;
+        /* Aumentar el tamaño de fuente para pantallas medianas */
+    }
+}
+
+@media (max-width: 1200px) {
+
+    /* Estilos para pantallas grandes (menos de 1200px) */
+    .custom-text {
+        font-size: 20px;
+        /* Aumentar aún más el tamaño de fuente para pantallas grandes */
+    }
+}
+
+
+
 .navbar-custom h5 {
     color: white;
     font-size: 1.5rem;
@@ -12,16 +60,16 @@
 }
 
 .navbar-contraido {
-    height: 60px; 
-    transition: height 0.3s; 
-}
-
-.navbar-expandido {
-    height: 100px; 
+    height: 60px;
     transition: height 0.3s;
 }
 
-.navbar-custom{
+.navbar-expandido {
+    height: 100px;
+    transition: height 0.3s;
+}
+
+.navbar-custom {
     background-color: #1b3039;
     display: flex;
     justify-content: flex-end;
@@ -31,60 +79,60 @@
     transition: all 0.3s;
 }
 
-.header .logo{
+.header .logo {
     cursor: pointer;
     order: 3;
     margin-left: auto;
 }
 
-.header .logo img{
+.header .logo img {
     height: 70px;
     width: auto;
     transition: all 0.3s;
 }
 
-.header .logo img:hover{
+.header .logo img:hover {
     transform: scale(1.2);
 }
 
-.header nav{
+.header nav {
     order: 1;
 }
 
-.header .nav-links{
+.header .nav-links {
     list-style: none;
 }
 
-.header .nav-links li{
+.header .nav-links li {
     display: inline-block;
-    padding: 0 20px;    
+    padding: 0 20px;
 }
 
-.header .nav-links li:nth-child(1){
+.header .nav-links li:nth-child(1) {
     padding: 0 20px 0 0;
 }
 
-.header .nav-links li:hover{
+.header .nav-links li:hover {
     transform: scale(1.1);
 }
 
-.header .nav-links a{
+.header .nav-links a {
     font-size: 700;
     color: #eceff1;
-    text-decoration: none;   
-    font-size: 1.2rem; 
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
-.header .nav-links li a:hover{
+.header .nav-links li a:hover {
     color: #82eb82;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
-.header .btn{
+.header .btn {
     order: 2;
 }
 
-.header .btn button{
+.header .btn button {
     margin-left: 20px;
     font-weight: 700;
     color: #1b3039;
@@ -94,10 +142,10 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
-.header .btn button:hover{
+.header .btn button:hover {
     background-color: #e2f1f8;
     color: #83f592;
     transform: scale(1.1);
@@ -106,22 +154,21 @@
 
 /*MENU ARRASTRABLE*/
 
-@media (max-width: 768px) {
-
-}
+@media (max-width: 768px) {}
 
 /*imagenes*/
 
 .image-right {
     float: right;
-    margin-left: 330px; /* Ajusta este valor según sea necesario */
+    margin-left: 330px;
+    /* Ajusta este valor según sea necesario */
     margin-right: 0;
 }
 
 .img-fluid {
     max-width: 100%;
     height: auto;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -163,7 +210,11 @@ body {
     font-weight: normal;
 }
 
-h1, h2, h3, h5, h6 {
+h1,
+h2,
+h3,
+h5,
+h6 {
     font-family: 'Grantha Sangam MN', sans-serif;
     font-size: 54px;
     font-weight: bold;
@@ -175,11 +226,14 @@ h4 {
     font-weight: bold;
 }
 
-p, li {
+p,
+li {
     font-family: 'Grantha Sangam MN', sans-serif;
     font-size: 25px;
     font-weight: normal;
 }
+
+
 /*texto preguntas*/
 .question-text {
     font-family: 'Grantha Sangam MN', sans-serif;
@@ -195,56 +249,104 @@ p, li {
 }
 
 .card-title {
-    font-size: 25px; /* Tamaño de fuente más pequeño */
+    font-size: 25px;
+    /* Tamaño de fuente más pequeño */
 }
 
+
+.accordion{
+    background-color: #f8f9fa;
+}
 
 /*margheens*/
 
-h1 {
-    margin: 5px 20px 20px 20px; /* Ajusta el valor según sea necesario */
-}
+
 
 /*boxes*/
 
 .green-box {
-    background-color: rgba(205, 255, 144, 0.5); /* Color verde limón con opacidad */
-    padding: 30px; /* Ajusta el padding según sea necesario */
-    border-radius: 20px;
-}
-
-/*cards*/
-.card-img-centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
+    background-color: #D8EBDD;
+    /* Color verde limón con opacidad */
 }
 
 .card {
-    flex: 1 1 300px; 
-    margin: 10px; 
+    border: 0;
+    height: 100%;
+    background-color: #f8f9fa;
+    /* Establecer una altura mínima */
+    min-height: 400px;
+    /* Ajusta esto según tus necesidades */
+    /* Utilizar flexbox para alinear contenido */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .card-body {
-    flex: 1; 
+    /* Para que el contenido se expanda */
+    flex-grow: 1;
+    height: 100%;
+    overflow-y: auto;
+    background-size: cover;
+    /* La imagen de fondo se ajusta para cubrir toda la tarjeta */
+    background-position: center;
+    /* Centra la imagen de fondo */
 }
 
-.card-img-top {
-    max-width: 100%; 
-    height: auto; 
-    margin: auto; 
+.custom-list {
+    list-style-type: none;
+    /* Elimina los puntos predeterminados */
+    padding-left: 20px;
+    /* Elimina el relleno izquierdo predeterminado */
 }
-  
+
+.custom-list li {
+    margin-bottom: 5px;
+    /* Espacio entre elementos de la lista */
+}
+
+.custom-list li:before {
+    content: "•";
+    /* Agrega puntos personalizados */
+    color: #000;
+    /* Color de los puntos */
+    display: inline-block;
+    width: 1em;
+    /* Ancho de los puntos */
+    margin-left: -1em;
+    /* Alineación de los puntos */
+}
+
+
+/* Estilo personalizado para la fila */
+.custom-row {
+    position: relative;
+    /* Establecer posición relativa */
+    overflow: hidden;
+    /* Ocultar contenido que se desborde */
+    background-color: green;
+}
+
+.custom-row::before {
+    content: "";
+    position: absolute;
+    background-color: green;
+    top: 0;
+    left: 0;
+    width: 50%;
+    /* Ancho del 50% de la fila */
+    height: 70%;
+    /* Altura del 70% de la fila */
+    z-index: -1;
+    /* Asegura que esté detrás del contenido de la fila */
+}
+
 
 /*footer*/
 .footer-black {
     background-color: #000;
-    color: #fff; /* Cambia el color del texto a blanco */
+    color: #fff;
+    /* Cambia el color del texto a blanco */
 }
+
