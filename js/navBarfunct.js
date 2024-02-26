@@ -10,3 +10,5 @@ function scrollFunction() {
       navbar.classList.remove("navbar-contraido");
   }
 }
+
+
